@@ -7,8 +7,8 @@ struct node* root = NULL;
 struct node
 {
   int data;
-  struct node* left;
   struct node* right;
+  struct node* left;
 } *previous, *current,*new,*root,*iterator,*nd,*top,*tail,*temp;
 
 typedef struct node node;
@@ -147,8 +147,8 @@ void preorder(){
 }
 
 int main(){
-  
-  while(3){
+#updated 
+  while(5){
   int input_key;
   scanf("%d",&input_key);  
   switch(input_key)
