@@ -1,5 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
+#include <time.h>
 
 struct node* root = NULL;
 struct node
@@ -83,7 +85,7 @@ void createbst(){
 } 
 
 void preorde(node* ptr){
-  if (ptr != NULL){
+  if (ptr){
     printf("%d ",ptr->data);
     preorde(ptr->left);
     
