@@ -92,6 +92,16 @@ void preorde(node* ptr){
     preorde(ptr->right);
   }
 }
+
+void postorder(node *ptr)
+{
+  if (ptr){
+    preorde(ptr->left);
+    preorde(ptr->right);
+    printf("%d ",ptr->data);
+  }
+}
+
 void inorder(){
   iterator = root;
   b:
